@@ -1,0 +1,259 @@
+/* ============================================
+   西电雨课堂 - Xidian RainClass
+   简洁学术风格，参考博客园 codinglife 皮肤
+   ============================================ */
+
+:root {
+  --primary: #8B1A2B;
+  --text: #333;
+  --text-light: #666;
+  --bg: #fff;
+  --border: #e8e8e8;
+  --highlight: #fff3b0;       /* 荧光笔黄 */
+  --link: #8B1A2B;
+  --code-bg: #f6f8fa;
+  --max-width: 860px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+               "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.85;
+}
+
+/* ===== Header ===== */
+.site-header {
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+  padding: 1.8rem 1.5rem 1.5rem;
+  text-align: center;
+}
+.site-header .brand {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--primary);
+  letter-spacing: 1px;
+}
+.site-header .subtitle {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  margin-top: 0.3rem;
+}
+
+/* ===== Breadcrumb ===== */
+.breadcrumb {
+  max-width: var(--max-width);
+  margin: 1.2rem auto 0 auto;
+  padding: 0 1.5rem;
+  font-size: 0.85rem;
+  color: var(--text-light);
+}
+.breadcrumb a {
+  color: var(--link);
+  text-decoration: none;
+}
+.breadcrumb a:hover { text-decoration: underline; }
+.breadcrumb span { margin: 0 0.35rem; }
+
+/* ===== Page Title ===== */
+.post-title {
+  max-width: var(--max-width);
+  margin: 0.8rem auto 0 auto;
+  padding: 0 1.5rem;
+}
+.post-title h1 {
+  font-size: 1.65rem;
+  font-weight: 700;
+  color: #222;
+}
+
+/* ===== Top Chapter Nav ===== */
+.chapter-nav {
+  max-width: var(--max-width);
+  margin: 1.2rem auto 0 auto;
+  padding: 0 1.5rem;
+}
+.chapter-nav-inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.chapter-nav-inner a {
+  display: inline-block;
+  padding: 4px 14px;
+  font-size: 0.82rem;
+  color: #555;
+  background: #f5f5f5;
+  border-radius: 14px;
+  text-decoration: none;
+  transition: all 0.15s;
+}
+.chapter-nav-inner a:hover {
+  background: var(--primary);
+  color: #fff;
+}
+
+/* ===== Post Body ===== */
+.post-body {
+  max-width: var(--max-width);
+  margin: 1.8rem auto 3rem;
+  padding: 0 1.5rem;
+}
+
+/* ---- Quote intro ---- */
+.post-body blockquote {
+  background: #fdf6ec;
+  border-left: 4px solid #e8c86e;
+  margin: 0 0 2.5rem;
+  padding: 1rem 1.4rem;
+  border-radius: 0 6px 6px 0;
+  color: #6b5b3a;
+  font-size: 0.95rem;
+}
+.post-body blockquote p { margin: 0.25rem 0; }
+.post-body blockquote a { color: var(--link); }
+
+/* ---- Chapter heading ---- */
+.post-body h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #222;
+  margin: 2.8rem 0 1rem;
+  padding-bottom: 0.55rem;
+  border-bottom: 2px solid var(--primary);
+}
+
+/* ---- Ordered list (questions) ---- */
+.post-body ol {
+  padding-left: 2.2rem;
+  list-style: decimal;
+}
+.post-body ol > li {
+  padding: 0.6rem 0.5rem;
+  line-height: 1.85;
+  font-size: 1rem;
+  color: #333;
+}
+.post-body ol > li:nth-child(odd) {
+  background: #fafafa;
+}
+
+/* ---- Answer highlight (like highlighter pen) ---- */
+.post-body ol > li strong,
+.post-body ol > li b {
+  font-weight: 600;
+  color: #4a3000;
+  background: linear-gradient(180deg, transparent 55%, var(--highlight) 55%);
+  padding: 0 3px;
+}
+
+/* ---- Nested lists (sub-questions) ---- */
+.post-body ol ol,
+.post-body ol ul {
+  margin-top: 0.4rem;
+  margin-bottom: 0.2rem;
+  padding-left: 1.8rem;
+  list-style: decimal;
+}
+.post-body ol ol > li,
+.post-body ol ul > li {
+  padding: 0.3rem 0;
+  background: transparent !important;
+}
+
+/* ---- Images ---- */
+.post-body img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0.6rem 0;
+  border-radius: 4px;
+}
+
+/* ---- Math ---- */
+.math-inline { font-style: italic; }
+
+/* ---- Links in content ---- */
+.post-body a {
+  color: var(--link);
+  text-decoration: none;
+}
+.post-body a:hover { text-decoration: underline; }
+
+/* ===== Footer ===== */
+.site-footer {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2rem 1.5rem 3rem;
+  text-align: center;
+  color: var(--text-light);
+  font-size: 0.85rem;
+  border-top: 1px solid var(--border);
+}
+.site-footer a { color: var(--link); text-decoration: none; }
+
+/* ===== Homepage Cards ===== */
+.home-intro {
+  max-width: var(--max-width);
+  margin: 2.5rem auto;
+  padding: 0 1.5rem;
+}
+.home-intro h2 {
+  font-size: 1.3rem;
+  color: #222;
+  margin-bottom: 1.2rem;
+}
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+.course-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-decoration: none;
+  color: var(--text);
+  transition: all 0.2s;
+}
+.course-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  border-color: #ccc;
+}
+.course-card .card-icon {
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+}
+.course-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+  color: #222;
+}
+.course-card p {
+  font-size: 0.88rem;
+  color: var(--text-light);
+  line-height: 1.7;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .site-header { padding: 1.2rem 1rem; }
+  .site-header .brand { font-size: 1.3rem; }
+  .post-body { padding: 0 1rem; margin-top: 1.2rem; }
+  .post-body h2 { font-size: 1.1rem; margin-top: 2rem; }
+  .post-body ol { padding-left: 1.5rem; }
+  .post-body ol > li { font-size: 0.95rem; padding: 0.5rem 0.3rem; }
+  .chapter-nav-inner a { font-size: 0.75rem; padding: 3px 10px; }
+  .post-title h1 { font-size: 1.35rem; }
+}
