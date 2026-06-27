@@ -222,6 +222,11 @@ body {
   border-top: 1px solid var(--border);
 }
 .site-footer a { color: var(--link); text-decoration: none; }
+.busuanzi-stats {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
 
 /* ===== Homepage Cards ===== */
 .home-intro {
