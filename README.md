@@ -14,10 +14,12 @@
 | 📖 [信息素养：学术研究的必修课](./information-literacy.html) | Week 1-6 习题答案截图版，涵盖文献检索方法等 |
 | ⚖️ [科研伦理与学术规范](./research-ethics.html) | 2024.12解密导出题库，6章课后习题答案 |
 
+| ✍️ [学术规范与论文写作](./academic-writing.html) | 雨课堂研究生全部答案，5讲内容 + 期末考试答案 |
+| 🏗️ [工程伦理](./engineering-ethics.html) | 期末考试答案 + 第一章至第十三章全部习题答案 |
+
 ## 内容说明
 
-- 内容整理自西电研究生网课相关资料
-- 人工智能安全与伦理答案参考 [LazzyXP/AI-Security-and-Ethics-BeiHang-University](https://github.com/LazzyXP/AI-Security-and-Ethics-BeiHang-University)，已修正部分错误
+- 自用资料，请勿用作其他用途
 
 ## 本地预览
 
