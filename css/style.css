@@ -246,6 +246,45 @@ body {
   line-height: 1.7;
 }
 
+/* ===== Research Ethics: code-as-answer format ===== */
+.post-body code {
+  font-family: inherit;
+  font-size: inherit;
+  background: #e8f5e9;
+  color: #1b5e20;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-weight: 600;
+  white-space: normal;
+}
+/* Blockquote as answer confirmation */
+.post-body blockquote {
+  background: #fdf6ec;
+  border-left: 4px solid #e8c86e;
+  margin: 0.4rem 0 1rem;
+  padding: 0.5rem 1.2rem;
+  border-radius: 0 6px 6px 0;
+  color: #6b5b3a;
+  font-size: 0.92rem;
+}
+.post-body blockquote p { margin: 0.2rem 0; }
+.post-body blockquote a { color: var(--link); }
+
+/* ===== Research Ethics: question strong ===== */
+.post-body p strong {
+  color: #222;
+}
+
+/* ===== H2 inside post-body (for research-ethics style) ===== */
+.post-body h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #222;
+  margin: 2.5rem 0 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--primary);
+}
+
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
   .site-header { padding: 1.2rem 1rem; }
