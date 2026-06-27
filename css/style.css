@@ -48,6 +48,28 @@ body {
   color: var(--text-light);
   margin-top: 0.3rem;
 }
+/* Top nav inside header */
+.top-nav {
+  margin-top: 0.8rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.top-nav a {
+  display: inline-block;
+  padding: 4px 16px;
+  font-size: 0.85rem;
+  color: #555;
+  text-decoration: none;
+  border-radius: 14px;
+  background: #f5f5f5;
+  transition: all 0.15s;
+}
+.top-nav a:hover,
+.top-nav a.active {
+  background: var(--primary);
+  color: #fff;
+}
 
 /* ===== Breadcrumb ===== */
 .breadcrumb {
